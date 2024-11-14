@@ -16,6 +16,10 @@ public class InventoryPage extends Page {
         super(driver, wait);
     }
 
+    public String getInventoryPageUrl() {
+        return "https://www.saucedemo.com/inventory.html";
+    }
+
     public By getRemoveButton() {
         return removeButton;
     }

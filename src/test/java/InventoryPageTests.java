@@ -22,7 +22,7 @@ public class InventoryPageTests extends BaseTest {
         loginPage.setPassword("secret_sauce");
         loginPage.getButton().click();
 
-        assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
+        assertEquals(driver.getCurrentUrl(), inventoryPage.getInventoryPageUrl());
     }
 
     @Test
